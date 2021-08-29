@@ -1,0 +1,42 @@
+.Layout {
+  text-align: center;
+  font-family: Roboto;
+  position: relative;
+  padding-top: 25rem;
+  width: 100%;
+  min-height: 100vh;
+  text-align: center;
+  background-size: 125vw 130vh;
+  background-repeat: no-repeat
+}
+
+.poster {
+
+  background-size: contain;
+  background-position: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Layout {
+    background-size: 125vw 90vh;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .Layout {
+    background-size: 125vw 90vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .Layout {
+    background-size: 150vw 90vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .Layout {
+    padding-top: 10rem;
+    background-image: none !important;
+  }
+}

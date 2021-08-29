@@ -1,0 +1,39 @@
+
+.Input {
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 10rem;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: 2.5px solid  rgba(255, 255, 255, .3);
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+    transition: border 0.25s ease, width 0.125s ease 0.125s;
+   
+}
+.Valid, 
+.Valid:focus{
+    border: 2.5px solid #079726 !important;
+}
+
+.Input:focus {
+    width: 30%;
+    border: 2.5px solid #e50914;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .Input:focus {
+        width: 25%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .Input {
+        width: 60%;
+    }
+    .Input:focus {
+        width: 70%;
+    }
+}

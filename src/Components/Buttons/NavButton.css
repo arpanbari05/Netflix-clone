@@ -1,0 +1,44 @@
+
+.Continue {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    border: 2.5px solid #e50914;
+    color: #e50914;
+    background-color: transparent;
+    transition: all .2s ease-in;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Continue:hover {
+    background: #e50914;
+    color: #fff;
+}
+
+.Cancel {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    border: 2.5px solid #777;
+    color: #777;
+    background-color: transparent;
+    transition: all .2s ease-in;
+    border-radius: 100px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.Cancel:hover {
+    border: 2.5px solid #fff;
+    color: #fff;
+}
+
+.Fill {
+    border: 2.5px solid #fff;
+    background-color: #fff;
+    color: #333;
+}
+
+.Fill:hover {
+    color: #333;
+}

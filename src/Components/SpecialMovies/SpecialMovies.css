@@ -1,0 +1,26 @@
+.SpecialMoviesContainer {
+    text-align: left;
+    color: #fff;
+    padding: 0 2rem;
+    margin: 6rem 0;
+}
+
+.SpecialMovies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 4rem 1rem;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+    .SpecialMovies {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .SpecialMovies {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 40vw);
+    }
+}

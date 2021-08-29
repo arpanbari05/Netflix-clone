@@ -1,0 +1,91 @@
+.HomeLoader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #333;
+}
+
+.Flex1 {
+    display: flex;
+    margin: 10rem 10rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+    height: 50rem;
+}
+
+.Flex2 {
+    display: flex;
+    margin-left: 2rem;
+    width: 50rem;
+    flex-direction: column;
+}
+
+.Flex3 {
+    margin-top: 2rem;
+}
+.HomeLoader figure {
+    margin: 0 !important;
+}
+
+.HomeLoader .Flex1 figure {
+    width: 20rem !important;
+    height: 25rem !important;
+    margin: .3rem 0 !important;
+}
+
+.HomeLoader .Flex1 figure:first-child {
+    margin: 2rem 0;
+}
+
+.HomeLoader .Flex1 .Flex2 figure {
+    width: 30rem !important;
+    height: 4rem !important;
+}
+
+.HomeLoader .Flex1 .Flex2 .Flex3 figure {
+    width: 30rem !important;
+    height: 1rem !important;
+}
+
+@media only screen and (max-width: 1500px) {
+    .Flex1 {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .Flex1 {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .Flex1 {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .Flex1 {
+        margin: 10rem auto;
+        justify-content: center;
+        width: 95%;
+        height: 30rem;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .HomeLoader .Flex1 figure {
+        width: 95vw !important;
+        height: 100% !important;
+        margin: .3rem 0 !important;
+    }
+
+    .Flex2 {
+        display: none;
+    }
+}

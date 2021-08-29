@@ -1,0 +1,35 @@
+.App {
+    position: relative;
+    text-align: center;
+    font-family: Roboto;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 62.50%;
+    background-color: #222;
+  }
+
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 43.75%;
+  }
+}

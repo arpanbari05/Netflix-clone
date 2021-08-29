@@ -1,0 +1,37 @@
+.SideBar {
+    width: 70%;
+    background-image: linear-gradient(to bottom right, #333 0 40%, #444);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 1000;
+    transition: all .2s ease;
+}
+
+.SideBar img {
+    width: 40%;
+    margin: 10rem auto;
+}
+
+.SideBar nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.SideBar nav a {
+    border-radius: 0px;
+    padding: 1.5rem 3rem;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.Open {
+    transform: translateX(0);
+}
+
+.Close {
+    transform: translateX(-100%);
+}

@@ -1,0 +1,88 @@
+.SpecialMovie {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.SpecialMovie picture,
+.SpecialMovie img, 
+.SpecialMovie source {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.Details .Preview {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: #d2342d;
+}
+
+.SpecialMovie .Icon,
+.SpecialMovie .IconMobile {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    background: rgba(210, 53, 45, .7);
+}
+.SpecialMovie .IconMobile {
+    display: none;
+}
+.Details {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    font-size: 1.2rem;
+    text-align: left;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 0 .5rem;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    cursor: pointer;
+    overflow: scroll;
+    transition: all .2s ease-in-out;
+}
+
+.Details::-webkit-scrollbar {
+    display: none;
+}
+
+.Details h4 {
+    font-size: 2rem;
+}
+.Details strong {
+    font-size: 1.6rem;
+}
+
+.Details:hover {
+    background: rgba(0,0,0,.4);
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1100px) {
+    .Details {
+        display: none;
+    }
+
+    .SpecialMovie .IconMobile {
+        display: block;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .SpecialMovie picture,
+    .SpecialMovie img, 
+    .SpecialMovie source {
+       border-radius: 7px;
+    }
+}

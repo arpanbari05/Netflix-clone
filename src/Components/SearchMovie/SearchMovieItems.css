@@ -1,0 +1,28 @@
+.SearchMovieItems {
+    width: 20%;
+    max-height: 50rem;
+    background-color: #444;
+    position: fixed;
+    top: 9rem;
+    left: 50%;
+    z-index: 500;
+    overflow: scroll;
+}
+
+@media only screen and (max-width: 1000px) {
+    .SearchMovieItems {
+        left: 60%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .SearchMovieItems {
+        width: 100%;
+        max-height: 100vh;
+        left: 0%;
+    }
+}
+
+.SearchMovieItems::-webkit-scrollbar {
+    display: none;
+}

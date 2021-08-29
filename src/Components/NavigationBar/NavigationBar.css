@@ -1,0 +1,42 @@
+.NavigationBar {
+  position: fixed;
+  background-image: linear-gradient(
+    to bottom,
+    #222222b7 0 50%,
+    rgba(0, 0, 0, 0)
+  );
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  padding: 0 5rem;
+  align-items: center;
+  z-index: 500;
+}
+
+.NavigationBar img {
+  width: 15rem;
+  margin: 3rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .NavigationBar {
+    padding: 2rem 2rem;
+  }
+
+  .NavigationBar img {
+    width: 10rem;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .NavigationBar nav,
+  .NavigationBar img {
+    display: none;
+  }
+  .NavigationBar {
+    background-image: none;
+    background: #222;
+  }
+}
